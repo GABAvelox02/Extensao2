@@ -1,12 +1,15 @@
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+// ==UserScript==
+// @name        MyAgar
+// @namespace   MyAgar
+// @author      ç¿ å¦‚bb HK Golden
+// @include     http://agar.io/
+// @version     1
+// @grant       none
+// ==/UserScript==
+$.getScript( "https://drive.google.com/uc?export=download&id=0Bwj_YCavPEMpVlhYTmVKTjZqZzA" )
+.done(function( script, textStatus ) {
+    $.getScript( "https://drive.google.com/uc?export=download&id=0Bwj_YCavPEMpOWRUeVFMdTJrbkE" );
+})
+.fail(function( jqxhr, settings, exception ) {
+    console.log("fail to load script");
+});
